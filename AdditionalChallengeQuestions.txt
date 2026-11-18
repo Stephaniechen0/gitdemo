@@ -1,0 +1,25 @@
+1. How do you unstage a file without deleting it?
+  git restore --staged filename
+
+2. How do you discard uncommitted changes in a modified file?
+  git restore filename
+
+3. How do you compare two commits?
+  git diff commit1 commit2
+
+4. How do you delete a remote branch?
+  git push origin --delete branch-name
+
+5. How do you create and push a Git tag named v1.0?
+  git tag v1.0
+  git push origin v1.0
+
+6. How do you revert a previously committed change?
+  git revert commit-hash
+
+7. What is the difference between git fetch and git pull?
+  git fetch: downloads updates from remote repo, doesn't integrate them into current branch
+  git pull: downloads updates and integrates them into current branch (merge, rebase)
+
+8. What can happen when two developers push to the same branch?
+  merge conflict, the changes need to be resolved
